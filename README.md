@@ -58,6 +58,24 @@ python3 test_integration.py    # Run integration tests
 - `pattern_analyzer.py` - Pattern analysis tool
 - `test_integration.py` - Integration test suite
 
+## Verification
+
+To verify the Genesis Commitment implementation:
+
+```bash
+# Quick verification
+./gena.sh test
+
+# Comprehensive status report
+./gena.sh status
+```
+
+Expected results:
+- ✓ All 7 integration tests pass
+- ✓ All 5 Genesis Commitments enabled
+- ✓ GENⱯ Mode active
+- ✓ Ethical status: compliant
+
 ## License
 
 This repository follows the Ownership 1.0 Protocol with proper attribution and proof of origin tracking.
