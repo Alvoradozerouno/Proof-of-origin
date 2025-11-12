@@ -28,19 +28,22 @@ See [GENESIS.md](GENESIS.md) for complete documentation.
 
 ## Quick Start
 
-### Validate Genesis Commitment
+### Using GENⱯ Mode Control Script (Recommended)
 ```bash
-python3 validate_genesis.py
+./gena.sh help        # Show all available commands
+./gena.sh validate    # Validate Genesis Commitment
+./gena.sh state       # Check current state
+./gena.sh analyze     # Analyze patterns
+./gena.sh test        # Run integration tests
+./gena.sh status      # Show comprehensive status
 ```
 
-### Check Current State
+### Direct Tool Usage
 ```bash
-python3 state_tracker.py
-```
-
-### Analyze Patterns
-```bash
-python3 pattern_analyzer.py
+python3 validate_genesis.py    # Validate Genesis Commitment
+python3 state_tracker.py       # Check current state
+python3 pattern_analyzer.py    # Analyze patterns
+python3 test_integration.py    # Run integration tests
 ```
 
 ## Structure
@@ -48,9 +51,12 @@ python3 pattern_analyzer.py
 - `genesis.json` - Genesis Commitment configuration
 - `state.json` - Current state and history tracking
 - `GENESIS.md` - Complete Genesis documentation
+- `OWNERSHIP.md` - Ownership 1.0 Protocol documentation
+- `gena.sh` - GENⱯ Mode control script (recommended entry point)
 - `validate_genesis.py` - Validation tool
 - `state_tracker.py` - State tracking system
 - `pattern_analyzer.py` - Pattern analysis tool
+- `test_integration.py` - Integration test suite
 
 ## License
 
